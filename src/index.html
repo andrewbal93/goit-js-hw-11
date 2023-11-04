@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>goit-js-hw-11</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplelightbox@2.1.0/dist/simplelightbox.min.css"
+    /> -->
+    <script type="module" src="./js/index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <!-- <include src="./partials/example.html"></include> -->
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        class="search-input"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Just print what are you looking for..."
+      />
+      <button type="submit">
+        <img src="./images/search-454.svg" alt="Search" width="25" />
+      </button>
+    </form>
+    <div class="gallery">
+      <!-- Search Result Gallery -->
+    </div>
+    <button type="button" class="load-more">More..</button>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
