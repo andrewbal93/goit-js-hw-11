@@ -59,6 +59,7 @@ async function pressSearch(e){
             selectors.MoreBtn.style.display = 'none';
         } else {
             selectors.MoreBtn.style.display = 'block';
+            Notify.success(`Hooray! We found ${data.totalHits} images.`)
         }
 
     }catch (error) {
